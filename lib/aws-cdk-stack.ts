@@ -21,7 +21,7 @@ export class AwsCdkStack extends cdk.Stack {
       code: lambda.Code.fromInline(`
         exports.handler = async function(event) {
           console.log('Lambda invoked!');
-          return { statusCode: 200, body: 'Hello world!' };
+          return { statusCode: 200, body: 'Hey! This is Vama!' };
         }
       `),
       environment: {
